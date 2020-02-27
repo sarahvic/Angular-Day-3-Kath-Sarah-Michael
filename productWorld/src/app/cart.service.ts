@@ -19,10 +19,10 @@ export class CartService {
         }
     }
     }
-   
-    
   }
  
+
+  
   getItems() {
     return this.items;
   }
@@ -31,4 +31,6 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+
+
  }

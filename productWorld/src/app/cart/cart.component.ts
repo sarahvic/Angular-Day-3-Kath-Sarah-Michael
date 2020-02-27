@@ -45,4 +45,15 @@ export class CartComponent implements OnInit {
     this.items[i].quantity = 0;
     this.items.splice(i,1);
   }
+
+  sum(){
+    var sum = 0;
+    for(let i = 0; i < this.items.length; i++ ){
+      sum += this.items[i].price* this.items[i].quantity; 
+    }
+      return sum;
+
 }
+
+}
+

@@ -8,7 +8,9 @@
  <button (click)="plus(item)">➕</button>
  <button (click)="minus(i)">➖</button>
  <button (click)="removeItem(i)">X</button>
+ 
 </div>
+<p>Total : {{ sum() }}</p>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
